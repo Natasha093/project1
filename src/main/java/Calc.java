@@ -1,8 +1,8 @@
 import java.util.*;
 import java.io.*;
 /**
- * Калькулятор
- * @author Ежова Наталья
+ * РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ
+ * @author  Р•Р¶РѕРІР° РќР°С‚Р°Р»СЊСЏ
  */
 public class Calc {
     public static void main (String [] args) throws IOException {
@@ -10,29 +10,29 @@ public class Calc {
 
         float d = 0;
 
-        System.out.println ("Введите 1-е число:");
+        System.out.println ("Р’РІРµРґРёС‚Рµ 1-Рµ С‡РёСЃР»Рѕ");
         float a = scanner.nextFloat ();
-        System.out.println ("Оператор:");
+        System.out.println ("РћРїРµСЂР°С‚РѕСЂ");
         char b = scanner.next().charAt(0);
-        System.out.println ("Введите 2-е число");
+        System.out.println ("Р’РІРµРґРёС‚Рµ 2-Рµ С‡РёСЃР»Рѕ");
         float c = scanner.nextFloat ();
-        //Операция сложения
+        //РѕРїРµСЂР°С†РёСЏ СЃР»РѕР¶РµРЅРёСЏ
         if (b == '+'){
             d = a + c;
         }
-        //Операция вычитания
+        //РѕРїРµСЂР°С†РёСЏ РІС‹С‡РёС‚Р°РЅРёСЏ
         else if (b == '-') {
             d = a - c;
         }
-        //Операция умножения
+        //РѕРїРµСЂР°С†РёСЏ СѓРјРЅРѕР¶РµРЅРёСЏ
         else if (b == '*') {
             d = a * c;
         }
-        //Операция деления
+        //РѕРїРµСЂР°С†РёСЏ РґРµР»РµРЅРёСЏ
         else if (b == '/') {
             d = a / c;
         }
-        //Вывод результата
-        System.out.printf("Результат: " + "%.4f", d);
+        //Р’С‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
+        System.out.printf("Р РµР·СѓР»СЊС‚Р°С‚ " + "%.4f", d);
     }
 }
